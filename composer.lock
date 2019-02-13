@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "574d5ac863361d78e7167300216da7f2",
+    "content-hash": "1c5c62369ca64dfc4d6bc6ac7595789c",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -1354,6 +1354,42 @@
                 "simple-cache"
             ],
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "rumd3x/notifier-interface",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rumd3x/notifier-interface.git",
+                "reference": "a663cf9ab2e2a481c910034ac38067ce6a6f9262"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rumd3x/notifier-interface/zipball/a663cf9ab2e2a481c910034ac38067ce6a6f9262",
+                "reference": "a663cf9ab2e2a481c910034ac38067ce6a6f9262",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rumd3x\\Standards\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rumd3x",
+                    "email": "edmurcardoso@gmail.com"
+                }
+            ],
+            "description": "Standard interface for objects that send notifications.",
+            "time": "2019-02-13T23:50:50+00:00"
         },
         {
             "name": "symfony/contracts",

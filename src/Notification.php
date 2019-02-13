@@ -1,7 +1,9 @@
 <?php
 namespace Rumd3x\Slack;
 
-class Notification
+use Rumd3x\Standards\NotificationInterface;
+
+class Notification implements NotificationInterface
 {
     public $text;
     public $channel;

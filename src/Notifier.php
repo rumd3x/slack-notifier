@@ -2,8 +2,9 @@
 namespace Rumd3x\Slack;
 
 use JoliCode\Slack\ClientFactory;
+use Rumd3x\Standards\NotifierInterface;
 
-class Notifier
+class Notifier implements NotifierInterface
 {
     /**
      * Slack integration client instance
