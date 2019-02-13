@@ -1,0 +1,24 @@
+{
+    "name": "rumd3x/slack-notifier",
+    "description": "Wrapper for sending customized channel notifications using slack.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rumd3x",
+            "email": "edmurcardoso@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "tightenco/collect": "^5.7",
+        "nesbot/carbon": "^2.11",
+        "php-http/curl-client": "^1.7",
+        "jolicode/slack-php-api": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rumd3x\\Slack\\": "src/"
+        }
+    }
+}
