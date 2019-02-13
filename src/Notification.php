@@ -11,11 +11,11 @@ class Notification
     /**
      * @param string $text
      */
-    public function __construct(string $text)
+    public function __construct(string $text, string $channel, string $username)
     {
         $this->text = $text;
-        $this->channel = getenv('SLACK_CHANNEL');
-        $this->username = getenv('SLACK_BOT_USERNAME');
+        $this->channel = $channel;
+        $this->username = $username;
         $this->attachments = collect();
     }
 
