@@ -3,6 +3,7 @@ namespace Rumd3x\Slack;
 
 use JoliCode\Slack\ClientFactory;
 use Rumd3x\Standards\NotifierInterface;
+use Rumd3x\Standards\NotificationInterface;
 
 class Notifier implements NotifierInterface
 {
@@ -23,10 +24,10 @@ class Notifier implements NotifierInterface
     }
 
     /**
-     * @param Notification $notification
+     * @param NotificationInterface $notification
      * @return null|\JoliCode\Slack\Api\Model\ChatPostMessagePostResponse200|\JoliCode\Slack\Api\Model\ChatPostMessagePostResponsedefault|\Psr\Http\Message\ResponseInterface
      */
-    public function notify(Notification $notification)
+    public function notify(NotificationInterface $notification)
     {
         return $this->client->chatPostMessage($notification->toArray());
     }
