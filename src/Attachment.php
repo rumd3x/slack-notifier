@@ -35,7 +35,7 @@ class Attachment
      */
     public function withFooter(string $footnote)
     {
-        $this->data['ts'] = Carbon::now()->timestamp;
+        $this->data['ts'] = (string) Carbon::now()->timestamp;
         $this->data['footer'] = $footnote;
         return $this;
     }
