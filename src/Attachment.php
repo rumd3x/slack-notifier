@@ -30,12 +30,13 @@ class Attachment
 
     /**
      * @SuppressWarnings(PHPMD.StaticAccess)
+     * @param string $footnote
      * @return self
      */
-    public function withFooter()
+    public function withFooter(string $footnote)
     {
         $this->data['ts'] = Carbon::now()->timestamp;
-        $this->data['footer'] = 'CPTM Alert Service';
+        $this->data['footer'] = $footnote;
         return $this;
     }
 
